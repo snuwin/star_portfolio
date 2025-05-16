@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Serena Nguyen
+EMAIL: serenaan@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Serena Nguyen">
+  <meta name="description" content="Webpage for my Portfolio">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <title>Serena Nguyen</title>
+</head>
+
+<body>
+<!-- navigation bar -->
+  <div class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="res/logo.png" alt="Logo">
+      </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+<button id="scrollToTopBtn" onclick="scrollToTop()">
+  <img src="res/arrow.png" alt="Scroll to Top">
+</button>
+
+<div class="profile-header">
+  <div class="container text-center">
+    <img src="res/serena_icon.JPG" alt="Picture of Serena Nguyen" class="rounded-circle" style="width: 400px; height: 400px;">
+    <p class = "profile-description">
+      Hello! I'm Serena Nguyen, a Computer Science student at the University
+      of California, Irvine.
+    </p>
+  </div>
+</div>
+
+<div class="audio-player">
+  <audio controls>
+    <source src="res/beaches.mp3" type="audio/mpeg">
+  </audio>
+  <h3> Beaches - beabadoobee </h3>
+</div>
+
+<img src="res/jellyfish.png" alt="Jellyfish Image" class="jellyfish-image">
+
+<div class="projects">
+  <h2>My Projects</h2>
+  <div class="project-cards">
+    <!-- Fabflix Project Card -->
+    <div class="project-card">
+      <img src="res/fabflix.png" alt="Fabflix Project">
+      <h3>Fabflix</h3>
+      <p>An online movie store that allows users to browse and purchase movies.</p>
+      <a href="https://github.com/uci-jherold2-fall24-cs122b/2024-fall-cs-122b-px" class="btn btn-primary">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="res/minesweeper.png" alt="Minesweeper AI Project">
+      <h3>Minesweeper AI</h3>
+      <p>An AI-powered application that uses advanced algorithms to play the classic Minesweeper game efficiently.</p>
+      <a href="https://github.com/snuwin/Minesweeper_AI" class="btn btn-primary">View Project</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <p>© 2025 | Serena Nguyen | University of California, Irvine</p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/serena-nguyen-458032296">
+      <img src="res/linkedin-icon.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/snuwin">
+      <img src="res/github-icon.png" alt="GitHub">
+    </a>
+  </div>
+</footer>
+
+
+<!-- Link to the js file -->
+  <script src="index.js"></script>
+</body>
+</html>
+

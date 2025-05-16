@@ -1,0 +1,135 @@
+/* Ensure the body takes full height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+
+h2 {
+    position: relative;
+    top: -230px; /* Moves it up */
+}
+
+body {
+    font-family: Raleway, serif;
+    background-image: url("res/under.jpg"); /* White background */
+    background-size: cover; /* Ensures the background covers the entire screen */
+    background-attachment: fixed; /* Keeps the background fixed while content scrolls */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* NAVBAR STYLES */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: white;
+    width: 100%;
+    height: 11%;
+    position: fixed;
+    z-index: 1000;
+    padding: 10px 20px; /* Adds padding inside navbar */
+}
+
+.navbar-brand img {
+    position:relative;
+    margin-bottom: -10px;
+    width: 200px; /* Adjust logo size */
+    border: none;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    position: relative;
+    right: 100px;
+    font-family: 'Raleway', sans-serif; /* Use consistent font across all pages */
+    display: flex; /* Align links in a horizontal row */
+    gap: 20px; /* Add spacing between links */
+    margin: 0; /* Remove unnecessary margins */
+    padding: 0; /* Ensure no extra padding */
+    list-style: none; /* Remove default bullet points (if any) */
+}
+
+.nav-links a {
+    font-size: 18px; /* Consistent text size */
+    letter-spacing: 2px; /* Spacing between letters for readability */
+    word-spacing: 2px; /* Spacing between words */
+    text-decoration: none; /* Remove underlines */
+    color: black; /* Neutral color for links */
+    font-weight: bold; /* Emphasize links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #0077ff; /* Highlight link on hover */
+}
+
+/* Style the LOGO */
+img {
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin-bottom: 20px;
+}
+/* Footer styles */
+footer {
+    background-color: #eaecea; /* Light gray background */
+    color: #000000; /* Dark text */
+    padding: 20px; /* Reduce padding for a cleaner look */
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.social-icons {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons img {
+    width: 60px; /* Adjust size of icons */
+    height: 60px; /* Maintain consistent height */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    border: none;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+
+.nav-links a {
+    font-family: 'Raleway', sans-serif; /* Ensure the font is applied */
+    font-size: 18px; /* Adjust for consistency */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Resume container */
+.resume-container {
+    flex: 1; /* Pushes the footer to the bottom */
+    display: flex;
+    justify-content: center; /* Center the iframe horizontally */
+    align-items: center; /* Center the iframe vertically */
+    margin-top: 100px; /* Space below the fixed navbar */
+    padding: 50px;
+}
+
+/* Style the iframe */
+.resume-container iframe {
+    width: 90%; /* Make it responsive to the viewport width */
+    height: calc(100vh - 180px); /* Full height minus navbar and footer space */
+    border: none; /* Remove border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
